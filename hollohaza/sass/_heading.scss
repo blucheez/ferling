@@ -18,11 +18,11 @@
     border-image-slice: 1;
     margin-bottom: -1px;
   }
+  .dropdown-menu.show {
+    background: var.$grad;
+  }
 }
 
-.dropdown-menu.show {
-  background: var.$grad;
-}
 
 .main-menu-link {
   text-decoration: none;

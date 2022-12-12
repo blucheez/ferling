@@ -1,0 +1,139 @@
+@use 'var';
+
+.collection {
+  background-color: var.$light;
+
+  .collection-title {
+    font-family: var.$cormorant;
+    font-size: 75px;
+  }
+
+  .collection-desc {
+    font-size: 17px;
+  }
+
+  @media (max-width: 960px) {
+    .collection-title {
+      font-size: 32px;
+    }
+    .collection-desc {
+      font-size: 14px;
+    }
+  }
+  .collection-line {
+    background: var.$grad;
+    height: 1px;
+    width: 130px;
+    margin: 40px auto;
+    margin-bottom: 30px;
+  }
+
+  .dropdown button {
+    width: 300px;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    border: 1px solid var.$lightgrey;
+    i {
+      font-size: 22px;
+    }
+    .icon {
+      color: var.$green;
+      font-size: 15px;
+    }
+  }
+
+  .dropdown-menu.show {
+    background-color: var.$light;
+    width: 300px;
+    .dropdown-item {
+      font-size: 12px;
+    }
+    .dropdown-item:focus {
+      background-color: var.$green;
+    }
+  }
+
+  .entries {
+    font-size: 20px;
+    .number {
+      color: var.$green;
+    }
+  }
+
+  .filters {
+    max-width: 1600px;
+  }
+
+  .item-list {
+    max-width: 1600px;
+    .card {
+      width: 270px;
+      border: none;
+      border-radius: 0;
+      font-weight: 400;
+      position: relative;
+      img {
+        border-radius: 0;
+      }
+
+      .card-body {
+        height: 240px;
+      }
+
+      .card-title {
+        font-size: 16px;
+        color: var.$green;
+      }
+      .card-text {
+        font-size: 19px;
+        color: var.$grey;
+      }
+
+      .card-price {
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      .addtocart-button {
+        border: 0;
+        background-color: #1b6155;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: 600;
+        display: none;
+      }
+
+      .new-button {
+        background-color: var.$green;
+        border: 2px solid var.$light;
+        font-size: 12px;
+        letter-spacing: 2px;
+        top: 15px;
+        right: -10px;
+        padding: 5px 15px;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .bagicon {
+        font-size: 20px;
+        color: var.$lightgrey;
+      }
+      .addtocart-button:hover {
+        background-color: var.$green;
+        color: var.$gray;
+      }
+    }
+    .card:hover {
+      .addtocart-button {
+        display: block;
+      }
+      .bagicon {
+        display: none;
+      }
+    }
+  }
+}
