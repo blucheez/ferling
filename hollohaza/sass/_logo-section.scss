@@ -1,0 +1,32 @@
+@use 'var';
+
+.lines {
+  .line {
+    background: var.$grad;
+    height: 1px;
+    width: 80px;
+    margin: 10px 0;
+    margin-left: 15px;
+  }
+  .line-mid {
+    margin-left: 0;
+  }
+  margin-right: 40px;
+}
+
+.lines-reverse {
+  .line {
+    background: var.$grad-reverse;
+    height: 1px;
+    width: 80px;
+    margin: 10px 0;
+  }
+  .line-mid-reverse {
+    margin-left: 15px;
+  }
+  margin-left: 40px;
+}
+
+.logo {
+  width: 100px;
+}

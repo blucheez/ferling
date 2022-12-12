@@ -1,0 +1,14 @@
+//colors
+$black: #000;
+$grey: #1a1a1a;
+$light: #f7f7f7;
+$grad: linear-gradient(270deg, #7ad4c2, #8fc37e);
+$grad-reverse: linear-gradient(90deg, #7ad4c2, #8fc37e);
+$green: #8fc37e;
+$cyan: #7ad4c2;
+
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600&family=Poppins:wght@300;600;800&display=swap');
+$cormorant: 'Cormorant', serif;
+$poppins: 'Poppins', sans-serif;
