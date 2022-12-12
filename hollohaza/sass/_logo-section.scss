@@ -30,3 +30,12 @@
 .logo {
   width: 100px;
 }
+
+button.navbar-toggler {
+  border: none;
+}
+
+button.navbar-toggler:focus {
+  border: 0;
+  box-shadow: none;
+}

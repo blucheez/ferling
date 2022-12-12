@@ -9,7 +9,7 @@
     text-decoration: none;
   }
   a:hover {
-    color: var.$grad;
+    color: var.$cyan;
   }
 
   i {
@@ -33,5 +33,28 @@
     i {
       cursor: pointer;
     }
+    i:hover {
+      color: var.$cyan;
+    }
+  }
+
+  .hamburger-logo {
+    width: 80px;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .hamburger-lines {
+    .line {
+      background: var.$grad;
+      height: 2px;
+      width: 72px;
+      margin: 10px 0;
+      margin-left: 13px;
+    }
+    .line-mid {
+      margin-left: 0;
+    }
+    margin-right: 10px;
   }
 }
