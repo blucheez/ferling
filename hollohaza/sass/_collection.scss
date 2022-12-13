@@ -45,13 +45,12 @@
   }
   .dropdown button.show-more-btn {
     font-weight: 600;
-    margin-top:30px;
+    margin-top: 30px;
     margin-bottom: 60px;
   }
-  .dropdown button.show-more-btn:hover{
+  .dropdown button.show-more-btn:hover {
     background-color: var.$green;
   }
-  
 
   .dropdown-menu.show {
     background-color: var.$light;
@@ -113,6 +112,15 @@
         letter-spacing: 3px;
         font-weight: 600;
         display: none;
+      }
+
+      @media (max-width: 576px) {
+        .addtocart-button {
+          display: block;
+        }
+        .bagicon {
+          display: none;
+        }
       }
 
       .new-button {

@@ -1,0 +1,78 @@
+@use 'var';
+
+footer {
+  .footer-info {
+    background: var.$footer;
+    color: white;
+    .info-title {
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .info-line {
+      background: var.$grad;
+      height: 1px;
+      width: 70px;
+      margin: 15px 0;
+    }
+
+    .info-desc {
+      font-size: 13px;
+      color: var.$lightgrey;
+    }
+
+    .info-green {
+      color: var.$green;
+      a {
+        text-decoration: none;
+        color: var.$green;
+      }
+      a:hover {
+        color: var.$light;
+      }
+    }
+
+    .social-icon {
+      height: 42px;
+      width: 42px;
+      background: var.$grad;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px;
+      i {
+        color: var.$footer;
+        font-size: 24px;
+      }
+    }
+    .social-icon:hover {
+      background: var.$light;
+    }
+  }
+
+  .footer-lower {
+    background: var.$footer-lower;
+    color: white;
+    .lower-logo img {
+      width: 50px;
+    }
+    .lower-desc {
+      font-size: 13px;
+      color: var.$light;
+    }
+    .lower-green {
+      font-size: 13px;
+      color: var.$green;
+      a {
+        text-decoration: none;
+        color: var.$green;
+      }
+
+      a:hover {
+        color: var.$light;
+      }
+    }
+  }
+}
