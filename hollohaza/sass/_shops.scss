@@ -1,0 +1,53 @@
+@use 'var';
+
+.shops {
+  height: 451px;
+  .shops-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../assets/shops-bg.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+
+  .shops-title {
+    font-family: var.$cormorant;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  .shops-desc {
+    color: white;
+  }
+  .shops-desc-tel {
+    color: var.$green;
+  }
+
+  .shops-container {
+    max-width: 550px;
+    margin: 0 100px;
+  }
+
+  .shops-line {
+    background: var.$grad;
+    height: 3px;
+    width: 80px;
+    margin: 20px auto;
+  }
+
+  @media (max-width: 768px) {
+    .shops-title {
+      font-size: 22px;
+    }
+    .shops-desc {
+      font-size: 15px;
+    }
+    .shops-line {
+      height: 2px;
+      margin: 15px auto;
+    }
+  }
+}

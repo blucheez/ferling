@@ -377,7 +377,7 @@
       </div>
       <div class="container item-list my-5 text-center">
         <div
-          class="d-flex flex-wrap justify-content-md-between justify-content-around"
+          class="d-flex flex-wrap justify-content-xl-between justify-content-around"
         >
           <div class="card shadow my-4">
             <img src="./assets/item1.png" class="card-img-top" alt="item1" />
@@ -624,13 +624,300 @@
             </div>
           </div>
         </div>
+        <div class="dropdown py-2 p-md-0">
+          <button class="btn show-more-btn text-center" type="button">
+            TOVÁBBI
+          </button>
+        </div>
       </div>
     </main>
-    <div class="gifts">
-        <div class="container">
-            asd
+
+    <section class="gifts text-center">
+      <div class="container">
+        <div class="gift-title mb-4">Ajándék & Ünnepi ajánlat</div>
+        <div class="gift-pictures d-flex flex-wrap justify-content-around">
+          <div class="gift-container">
+            <div
+              class="gift-img-div d-flex justify-content-center align-items-center"
+            >
+              <img class="gift-img" src="./assets/gift-for/women.png" alt="" />
+            </div>
+            <a href="#" class="gift-desc">HÖLGYEKNEK</a>
+            <div class="gift-line"></div>
+          </div>
+          <div class="gift-container">
+            <div
+              class="gift-img-div d-flex justify-content-center align-items-center"
+            >
+              <img class="gift-img" src="./assets/gift-for/men.png" alt="" />
+            </div>
+            <a href="#" class="gift-desc">URAKNAK</a>
+            <div class="gift-line"></div>
+          </div>
+          <div class="gift-container">
+            <div
+              class="gift-img-div d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="gift-img"
+                src="./assets/gift-for/wedding.png"
+                alt=""
+              />
+            </div>
+            <a href="#" class="gift-desc">ESKÜVŐ</a>
+            <div class="gift-line"></div>
+          </div>
+          <div class="gift-container">
+            <div
+              class="gift-img-div d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="gift-img"
+                src="./assets/gift-for/children.png"
+                alt=""
+              />
+            </div>
+            <a href="#" class="gift-desc">GYEREKEK</a>
+            <div class="gift-line"></div>
+          </div>
+          <div class="gift-container">
+            <div
+              class="gift-img-div d-flex justify-content-center align-items-center"
+            >
+              <img
+                class="gift-img"
+                src="./assets/gift-for/holiday.png"
+                alt=""
+              />
+            </div>
+            <a href="#" class="gift-desc">ÜNNEPEK</a>
+            <div class="gift-line"></div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+
+    <section class="shops">
+      <div
+        class="shops-bg d-flex flex-wrap align-items-center justify-content-center text-center"
+      >
+        <div class="shops-container">
+          <h2 class="shops-title">Hollóházi márkabolt</h2>
+          <div class="shops-line"></div>
+          <div class="shops-desc">
+            <p>3999 Hollóháza, Károlyi utca 11.</p>
+            <p class="shops-desc-tel">Tel.: +36 20 592 2488</p>
+          </div>
+        </div>
+        <div class="shops-container">
+          <h2 class="shops-title">
+            A Hollóházi Porcelán Bemutató- és Kiállítóterem
+          </h2>
+          <div class="shops-line"></div>
+          <div class="shops-desc">
+            <p>1055 Budapest, Falk Miksa u 7.</p>
+            <p class="shops-desc-tel">Tel.: +36 70 476 4374</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="albums">
+      <div
+        class="d-flex justify-content-around justify-content-sm-between align-items-center px-5 px-md-3 px-xxl-0"
+      >
+        <div class="albums-title ps-3 ps-sm-0">Galéria albumok</div>
+        <div class="text-center d-sm-none">
+          <img
+            src="../hollohaza/assets/gallery/album1.png"
+            class="d-block"
+            alt="album1"
+          />
+          <!-- <div class="albums-desc"><a href="#" class="fs-6">Összes album</a></div> -->
+          <div class="dropdown py-2 p-md-0">
+            <button class="btn show-more-btn text-center" type="button">
+              Összes album
+            </button>
+          </div>
+        </div>
+        <div class="dropdown py-2 p-md-0 d-none d-sm-block">
+          <button
+            class="btn d-flex justify-content-between align-items-center"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            ÖSSZES ALBUM
+            <i class="bi bi-chevron-down icon"></i>
+          </button>
+          <ul class="dropdown-menu text-center">
+            <li><a class="dropdown-item" href="#">Album 01</a></li>
+            <li><a class="dropdown-item" href="#">Album 02</a></li>
+            <li><a class="dropdown-item" href="#">Album 03</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        id="albumCarousel"
+        class="carousel slide d-none d-sm-block"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#albumCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#albumCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#albumCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album1.png"
+                  class="d-block"
+                  alt="album1"
+                />
+                <div class="albums-desc"><a href="#">Album 01</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album2.png"
+                  class="d-block album-img"
+                  alt="album2"
+                />
+                <div class="albums-desc"><a href="#">Album 02</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album3.png"
+                  class="d-block"
+                  alt="album3"
+                />
+                <div class="albums-desc"><a href="#">Album 03</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album4.png"
+                  class="d-block"
+                  alt="album4"
+                />
+                <div class="albums-desc"><a href="#">Album 04</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album3.png"
+                  class="d-block"
+                  alt="album1"
+                />
+                <div class="albums-desc"><a href="#">Album 01</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album4.png"
+                  class="d-block album-img"
+                  alt="album2"
+                />
+                <div class="albums-desc"><a href="#">Album 02</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album1.png"
+                  class="d-block"
+                  alt="album3"
+                />
+                <div class="albums-desc"><a href="#">Album 03</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album2.png"
+                  class="d-block"
+                  alt="album4"
+                />
+                <div class="albums-desc"><a href="#">Album 04</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album2.png"
+                  class="d-block"
+                  alt="album1"
+                />
+                <div class="albums-desc"><a href="#">Album 01</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album1.png"
+                  class="d-block album-img"
+                  alt="album2"
+                />
+                <div class="albums-desc"><a href="#">Album 02</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album4.png"
+                  class="d-block"
+                  alt="album3"
+                />
+                <div class="albums-desc"><a href="#">Album 03</a></div>
+              </div>
+              <div class="text-center">
+                <img
+                  src="../hollohaza/assets/gallery/album3.png"
+                  class="d-block"
+                  alt="album4"
+                />
+                <div class="albums-desc"><a href="#">Album 04</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="..." />
+          </div> -->
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#albumCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#albumCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

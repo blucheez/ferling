@@ -43,6 +43,15 @@
       font-size: 15px;
     }
   }
+  .dropdown button.show-more-btn {
+    font-weight: 600;
+    margin-top:30px;
+    margin-bottom: 60px;
+  }
+  .dropdown button.show-more-btn:hover{
+    background-color: var.$green;
+  }
+  
 
   .dropdown-menu.show {
     background-color: var.$light;
@@ -63,19 +72,20 @@
   }
 
   .filters {
-    max-width: 1600px;
+    max-width: var.$content-maxw;
   }
 
   .item-list {
-    max-width: 1600px;
+    max-width: var.$content-maxw;
     .card {
-      width: 270px;
+      max-width: 270px;
       border: none;
       border-radius: 0;
       font-weight: 400;
       position: relative;
       img {
         border-radius: 0;
+        max-width: 270;
       }
 
       .card-body {
@@ -124,7 +134,7 @@
       }
       .addtocart-button:hover {
         background-color: var.$green;
-        color: var.$gray;
+        color: var.$grey;
       }
     }
     .card:hover {

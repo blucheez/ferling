@@ -1,0 +1,98 @@
+@use 'var';
+
+.albums {
+  max-width: var.$content-maxw;
+  margin: 50px auto;
+  .albums-title {
+    font-family: var.$cormorant;
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    width: 200px;
+    margin: 50px 20px 25px;
+  }
+  .carousel-indicators {
+    bottom: -100px;
+  }
+
+  button.carousel-control-prev,
+  button.carousel-control-next {
+    display: block;
+    width: 50px;
+  }
+
+  .carousel-indicators button {
+    background-color: var.$lightgrey;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+  }
+  .carousel-indicators button.active {
+    background-color: var.$green;
+  }
+  .carousel-control-prev-icon {
+    background-image: url(../assets/gallery/chevron-left.svg);
+    width: 50px;
+    height: 50px;
+  }
+  .carousel-control-next-icon {
+    background-image: url(../assets/gallery/chevron-right.svg);
+    width: 50px;
+    height: 50px;
+    right: -50px;
+  }
+
+  .albums-desc {
+    a {
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: var.$grey;
+    }
+
+    a:hover {
+      color: var.$green;
+    }
+  }
+
+  .dropdown button {
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0;
+    letter-spacing: 2px;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 1px solid var.$green;
+    i {
+      font-size: 22px;
+    }
+    .icon {
+      color: var.$green;
+      font-size: 15px;
+    }
+  }
+  .dropdown button.show,
+  .dropdown button:focus {
+    border: 0;
+    border-bottom: 1px solid var.$green;
+  }
+
+  .dropdown button.show-more-btn:hover{
+    background-color: var.$green;
+    border-radius: 5px;
+  }
+
+  .dropdown-menu.show {
+    width: 200px;
+    .dropdown-item {
+      font-size: 12px;
+    }
+    .dropdown-item:focus {
+      background-color: var.$green;
+    }
+  }
+}
