@@ -10,7 +10,13 @@ nav {
     font-family: var.$cinzel;
     font-size: 1.5rem;
     color: var.$peach;
+    width: 10rem;
   }
+
+  .menus{
+    min-height: 10rem;
+  }
+
 
   .main-menu {
     ul {

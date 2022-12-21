@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway:wght@300;400;600&display=swap";nav{background-color:#1a2852}nav .logo img{width:13rem}nav .title{font-family:"Cinzel Decorative",cursive;font-size:1.5rem;color:#f7cfc7}nav .main-menu ul li a{color:#fff;text-decoration:none}*{font-family:"Raleway",sans-serif;color:#fff}/*!
+@import"https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway:wght@300;400;600&display=swap";nav{background-color:#1a2852}nav .logo img{width:13rem}nav .title{font-family:"Cinzel Decorative",cursive;font-size:1.5rem;color:#f7cfc7;width:10rem}nav .menus{min-height:10rem}nav .main-menu ul li a{color:#fff;text-decoration:none}*{font-family:"Raleway",sans-serif;color:#fff}/*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.

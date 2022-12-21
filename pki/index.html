@@ -6,28 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pécsi Központi Iskola</title>
     <link rel="stylesheet" href="sass/main.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   </head>
   <body>
-    <nav>
-      <div class="container d-flex py-3">
-        <div class="logo d-flex align-items-center">
-          <img src="./assets/pki_logo.png" alt="" />
-          <div class="title">Pécsi Központi Iskola</div>
-        </div>
-        <div
-          class="menus container-fluid d-flex flex-column justify-content-between"
-        >
-          <div class="top-menu align-self-end">top</div>
-          <div class="main-menu">
-            <ul class="list-unstyled d-flex justify-content-around">
-              <li><a href="#">Hírek</a></li>
-              <li><a href="#">Történetek</a></li>
-              <li><a href="#">Karrier</a></li>
-              <li><a href="#">Galéria</a></li>
-            </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="logo d-flex align-items-center">
+            <img src="./assets/pki_logo.png" alt="" class="d-none d-sm-block" />
+            <div class="title">Pécsi Központi Iskola</div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <div
+              class="menus container-fluid d-flex flex-column justify-content-between"
+            >
+              <div class="top-menu align-self-end">top</div>
+              <div class="main-menu">
+                <ul
+                  class="navbar-nav list-unstyled d-flex justify-content-around"
+                >
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active">Hírek</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Történetek</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Karrier</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Galéria</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
