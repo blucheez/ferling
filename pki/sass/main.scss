@@ -1,0 +1,9 @@
+@use 'var';
+@use 'nav';
+
+* {
+    font-family: var.$raleway;
+    color: #fff;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
