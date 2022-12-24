@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pécsi Központi Iskola</title>
     <link rel="stylesheet" href="sass/main.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <div class="logo d-flex align-items-center">
-            <img src="./assets/pki_logo.png" alt="" class="d-none d-sm-block" />
-            <div class="title">Pécsi Központi Iskola</div>
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container d-flex">
+          <div class="d-flex align-items-center">
+            <img src="./assets/pki_logo.png" alt="" class="logo" />
+            <div class="title d-none d-md-block">Pécsi Központi Iskola</div>
           </div>
           <button
             class="navbar-toggler"
@@ -37,10 +40,10 @@
                   class="navbar-nav list-unstyled d-flex justify-content-around"
                 >
                   <li class="nav-item">
-                    <a href="#" class="nav-link active">Hírek</a>
+                    <a href="#news" class="nav-link active">Hírek</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">Történetek</a>
+                    <a href="#stories" class="nav-link">Történetek</a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">Karrier</a>
@@ -55,6 +58,193 @@
         </div>
       </nav>
     </header>
+    <section class="video-section">
+      <video autoplay muted loop controls poster="./assets/video-poster.png">
+        <source src="./assets/video.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section class="news pt-3" id="news">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-between"
+      >
+        <div class="news-title text-center d-lg-none">Hírek</div>
+        <div
+          id="newsCarousel"
+          class="carousel carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#newsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#newsCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#newsCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+              <img
+                src="./assets/news/news-1.jpg"
+                class="d-block img-fluid"
+                alt="news-1"
+              />
+              <div class="carousel-caption d-block d-md-block">
+                <a href="#">
+                  <h5>Lorem, ipsum dolor.</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="./assets/news/news-2.jpg"
+                class="d-block img-fluid"
+                alt="news-2"
+              />
+              <div class="carousel-caption d-block d-md-block">
+                <a href="#">
+                  <h5>Lorem ipsum dolor sit.</h5>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img
+                src="./assets/news/news-3.jpg"
+                class="d-block img-fluid"
+                alt="news-3"
+              />
+              <div class="carousel-caption d-block d-md-block">
+                <a href="#">
+                  <h5>Lorem ipsum dolor sit.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#newsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#newsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div
+          class="news-small-container d-flex flex-column justify-content-between align-items-center ms-3"
+        >
+          <div class="news-title d-none d-lg-block">Hírek</div>
+          <a href="#" class="news-small my-3 my-lg-0">
+            Lorem ipsum dolor sit, amet consectetur adipisicing.
+          </a>
+          <a href="#" class="news-small mb-3 mb-lg-0"
+            >Lorem ipsum dolor sit amet.</a
+          >
+          <a href="#" class="news-small">Lorem ipsum dolor sit.</a>
+        </div>
+      </div>
+    </section>
+    <section class="benefits mt-5 d-flex align-items-center">
+      <div class="container d-flex justify-content-around align-items-center">
+        <div class="benefit-container text-center">
+          <img src="./assets/benefits/lang.png" alt="" />
+          <a href="#" class="benefit-text d-block shadow">Emelt nyelvoktatás</a>
+        </div>
+        <div class="benefit-container text-center">
+          <img src="./assets/benefits/library.png" alt="" />
+          <a href="#" class="benefit-text d-block shadow"
+            >Felszerelt könyvtár</a
+          >
+        </div>
+        <div class="benefit-container text-center">
+          <img src="./assets/benefits/food.png" alt="" />
+          <a href="#" class="benefit-text d-block shadow"
+            >Étkezési lehetőségek</a
+          >
+        </div>
+        <div class="benefit-container text-center">
+          <img src="./assets/benefits/hike.png" alt="" />
+          <a href="#" class="benefit-text d-block shadow">Rendszeres túrázás</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stories" id="stories">
+      <div
+        class="container d-flex flex-column justify-content-around h-100 pb-5"
+      >
+        <div class="stories-title align-self-center mt-4 text-center">
+          Kiemelt történetek
+        </div>
+        <div class="story-container d-flex shadow w-75 flex-column flex-sm-row mb-2 mb-sm-4">
+          <img src="./assets/stories/story-1.jpg" alt="" class="me-2" />
+          <div class="pe-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia?
+          </div>
+        </div>
+        <div
+          class="story-container story-container-right d-flex align-self-end shadow w-75 flex-column-reverse flex-sm-row justify-content-end mb-2 mb-sm-4"
+        >
+          <div class="text-end ps-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia?
+          </div>
+          <img
+            src="./assets/stories/story-2.jpg"
+            alt=""
+            class="ms-sm-2 align-self-end align-self-sm-start"
+          />
+        </div>
+        <div class="story-container d-flex shadow w-75 flex-column flex-sm-row mb-2 mb-sm-4">
+          <img src="./assets/stories/story-3.jpg" alt="" class="me-2" />
+          <div class="pe-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia?
+          </div>
+        </div>
+        <div
+          class="story-container story-container-right d-flex align-self-end shadow w-75 flex-column-reverse flex-sm-row justify-content-end"
+        >
+          <div class="text-end ps-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia?
+          </div>
+          <img
+            src="./assets/stories/story-1.jpg"
+            alt=""
+            class="ms-sm-2 align-self-end align-self-sm-start"
+          />
+        </div>
+      </div>
+    </section>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>

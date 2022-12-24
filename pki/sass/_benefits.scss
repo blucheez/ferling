@@ -1,0 +1,24 @@
+@use 'var';
+
+.benefits {
+  height: 150px;
+  background: var.$grad;
+
+  .benefit-container {
+    img {
+      width: 80px;
+    }
+
+    .benefit-text {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin-top: 20px;
+      transition: 0.2s;
+    }
+    .benefit-text:hover{
+        color: var.$peach2;
+    }
+  }
+}

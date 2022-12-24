@@ -1,29 +1,35 @@
 @use 'var';
 
-nav {
-  background-color: var.$blue;
+header {
+  height: 100vh;
 
-  .logo img {
-    width: 13rem;
-  }
-  .title {
-    font-family: var.$cinzel;
-    font-size: 1.5rem;
-    color: var.$peach;
-    width: 10rem;
-  }
+  nav {
+    background-color: var.$blue;
+    opacity: 0.9;
+    z-index: 1;
 
-  .menus{
-    min-height: 10rem;
-  }
+    .logo {
+      width: 9.5rem;
+    }
+    .title {
+      font-family: var.$cinzel;
+      font-size: 1.6rem;
+      color: var.$peach;
+      /* width: 10rem; */
+    }
 
+    .menus {
+      min-height: 6rem;
+      max-width: 600px;
+    }
 
-  .main-menu {
-    ul {
-      li {
-        a {
-          color: #fff;
-          text-decoration: none;
+    .main-menu {
+      ul {
+        li {
+          a {
+            color: #fff;
+            text-decoration: none;
+          }
         }
       }
     }

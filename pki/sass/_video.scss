@@ -1,0 +1,19 @@
+@use 'var';
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 95vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) { 
+    video{
+        width: 90vw;
+    }
+}
