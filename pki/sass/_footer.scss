@@ -1,2 +1,72 @@
 @use 'var';
 
+footer {
+  background: var.$blue-tp;
+  .footer-main {
+    .info-title {
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: var.$peach3
+    }
+
+    .info-desc {
+      font-size: 14px;
+      color: var.$peach;
+    }
+
+    .info-colored {
+      a {
+        text-decoration: none;
+        color: var.$peach2;
+      }
+      a:hover {
+        color: #fff;
+      }
+    }
+    .footer-logo{
+        width: 170px;
+    }
+
+    .social-icon {
+      height: 42px;
+      width: 42px;
+      background: var.$peach;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px;
+      transition: all 0.2s ease-in-out;
+      i {
+        color: var.$blue;
+        font-size: 24px;
+      }
+    }
+    .social-icon:hover {
+      background: var.$peach3;
+      transition: all 0.2s ease-in-out;
+      transform: scale(1.1);
+    }
+  }
+
+  .footer-socket {
+    background: var.$grad;
+    
+    .socket-desc {
+      font-size: 14px;
+      color: var.$peach;
+    }
+    .socket-colored {
+      font-size: 14px;
+      color: var.$peach;
+      a {
+        text-decoration: none;
+        color: var.$peach2;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+    }
+  }
+}
