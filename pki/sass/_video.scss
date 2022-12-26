@@ -2,7 +2,7 @@
 
 video {
   object-fit: cover;
-  width: 100vw;
+  width: 95vw;
   height: 95vh;
   position: absolute;
   top: 0;
@@ -12,8 +12,8 @@ video {
   margin-right: auto;
 }
 
-@media (min-width: 992px) { 
+/* @media (min-width: 992px) { 
     video{
         width: 90vw;
     }
-}
+} */

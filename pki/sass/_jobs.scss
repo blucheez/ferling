@@ -36,6 +36,10 @@
     background-color: var.$blue-tp;
     color: var.$peach2;
     transition: 0.2s;
-    transform: scale(1.05);
+  }
+  @media (min-width: 992px) {
+    .card:hover {
+      transform: scale(1.05);
+    }
   }
 }
