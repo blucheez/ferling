@@ -1,0 +1,41 @@
+@use 'var';
+
+.jobs {
+  .jobs-title {
+    font-family: var.$cinzel;
+    color: var.$peach2;
+    font-size: 2rem;
+  }
+  @media (min-width: 992px) {
+    .jobs-title {
+      font-size: 3rem;
+    }
+  }
+
+  .jobs-link {
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var.$peach2;
+      transition: 0.2s;
+    }
+
+    a:hover {
+      color: var.$blue;
+    }
+  }
+
+  .card {
+    color: var.$blue;
+    transition: 0.2s;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    background-color: var.$blue-tp;
+    color: var.$peach2;
+    transition: 0.2s;
+    transform: scale(1.05);
+  }
+}

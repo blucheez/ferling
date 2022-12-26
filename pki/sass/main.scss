@@ -4,6 +4,9 @@
 @use 'news';
 @use 'benefits';
 @use 'stories';
+@use 'jobs';
+@use 'divider';
+@use 'gallery';
 
 * {
     font-family: var.$raleway;

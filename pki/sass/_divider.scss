@@ -1,0 +1,6 @@
+@use 'var';
+
+.divider {
+  height: 150px;
+  background: var.$grad-rev;
+}
