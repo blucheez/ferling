@@ -23,6 +23,10 @@
     }
     a:hover {
       color: var.$peach2;
+      transition: 0.2s;
+    }
+    h5{
+      font-weight: 600;
     }
   }
 
@@ -48,11 +52,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: all .2s ease-in;
+      transition: all .2s ease-in-out;
+      font-weight: 600;
     }
     .news-small:hover {
       background: rgba(26, 40, 82, 0.9);
       color: var.$peach2;
+      transition: all .2s ease-in-out;
     }
 
     .news-small:nth-child(3) {

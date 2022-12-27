@@ -16,7 +16,7 @@
     text-align: center;
     a {
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: var.$peach2;
       transition: 0.2s;
     }
@@ -27,15 +27,26 @@
   }
 
   .card {
-    color: var.$blue;
     transition: 0.2s;
+    .card-title {
+      color: var.$peach3;
+      font-weight: 600;
+    }
+    .card-text {
+      color: var.$blue;
+    }
+    .card-date {
+      color: var.$peach;
+    }
   }
 
   .card:hover {
     cursor: pointer;
     background-color: var.$blue-tp;
-    color: var.$peach2;
     transition: 0.2s;
+    .card-text {
+      color: var.$peach;
+    }
   }
   @media (min-width: 992px) {
     .card:hover {

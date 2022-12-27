@@ -2,20 +2,33 @@
 
 header {
   height: 100vh;
-
+  background-color: var.$peach;
   nav {
     background-color: var.$blue;
     opacity: 0.9;
     z-index: 1;
 
     .logo {
-      width: 9.5rem;
+      width: 9rem;
     }
     .title {
       font-family: var.$cinzel;
-      font-size: 1.6rem;
-      color: var.$peach;
-      /* width: 10rem; */
+      font-size: 1.2rem;
+      color: var.$peach2;
+      padding-bottom: 10px;
+    }
+    @media (min-width: 992px) {
+      .title {
+        font-size: 1.7rem;
+        padding-bottom: 0;
+      }
+      .logo {
+        width: 10rem;
+      }
+    }
+    .navbar-toggler {
+      color: var.$peach2;
+      font-size: 2rem;
     }
 
     .menus {
@@ -26,11 +39,41 @@ header {
     .main-menu {
       ul {
         li {
-          a {
+          .nav-link {
             color: #fff;
             text-decoration: none;
+            transition: 0.2s;
+            font-weight: 400;
+            letter-spacing: 1.3px;
+          }
+          .nav-link:hover {
+            color: var.$peach3;
           }
         }
+      }
+    }
+
+    .top-menu {
+      .form-control {
+        color: #fff;
+        background-color: var.$blue-tp;
+        border: none;
+        border-bottom: 1px solid var.$peach;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+      }
+      .form-control:focus {
+        background-color: var.$blue-tp;
+        box-shadow: none;
+      }
+      .form-control::placeholder {
+        color: var.$peach;
+        opacity: 0.4;
+      }
+
+      i {
+        color: var.$peach;
       }
     }
   }

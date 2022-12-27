@@ -13,11 +13,11 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container d-flex">
-          <div class="d-flex align-items-center">
-            <img src="./assets/pki_logo.png" alt="" class="logo" />
-            <div class="title d-none d-md-block">Pécsi Központi Iskola</div>
+          <div class="text-center d-sm-flex align-items-center flex-nowrap">
+            <img src="./assets/pki_logo.png" class="logo" />
+            <div class="title">Pécsi Központi Iskola</div>
           </div>
           <button
             class="navbar-toggler"
@@ -28,13 +28,24 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-book"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarToggler">
             <div
               class="menus container-fluid d-flex flex-column justify-content-between"
             >
-              <div class="top-menu align-self-end">top</div>
+              <div class="top-menu align-self-center align-self-sm-end">
+                <form class="d-flex align-items-center" action="">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="keresés"
+                  />
+                  <button type="submit" class="btn">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
               <div class="main-menu">
                 <ul
                   class="navbar-nav list-unstyled d-flex justify-content-around"
@@ -51,6 +62,9 @@
                   <li class="nav-item">
                     <a href="#gallery" class="nav-link">Galéria</a>
                   </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link">Kapcsolat</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -58,7 +72,7 @@
         </div>
       </nav>
     </header>
-    <section class="video-section">
+    <section class="video-section mb-4">
       <video autoplay muted loop controls poster="./assets/video-poster.png">
         <source src="./assets/video.mp4" type="video/mp4" />
       </video>
@@ -174,23 +188,23 @@
     <section class="benefits mt-5 d-flex align-items-center">
       <div class="container d-flex justify-content-around align-items-center">
         <div class="benefit-container text-center">
-          <img src="./assets/benefits/lang.png" alt="" />
+          <img src="./assets/benefits/lang.png" />
           <a href="#" class="benefit-text d-block shadow">Emelt nyelvoktatás</a>
         </div>
         <div class="benefit-container text-center">
-          <img src="./assets/benefits/library.png" alt="" />
+          <img src="./assets/benefits/library.png" />
           <a href="#" class="benefit-text d-block shadow"
             >Felszerelt könyvtár</a
           >
         </div>
         <div class="benefit-container text-center">
-          <img src="./assets/benefits/food.png" alt="" />
+          <img src="./assets/benefits/food.png" />
           <a href="#" class="benefit-text d-block shadow"
             >Étkezési lehetőségek</a
           >
         </div>
         <div class="benefit-container text-center">
-          <img src="./assets/benefits/hike.png" alt="" />
+          <img src="./assets/benefits/hike.png" />
           <a href="#" class="benefit-text d-block shadow">Rendszeres túrázás</a>
         </div>
       </div>
@@ -209,10 +223,9 @@
           <div class="d-flex flex-row flex-sm-column align-items-center">
             <img
               src="./assets/stories/story-1.jpg"
-              alt=""
               class="me-1 align-self-start"
             />
-            <div class="story-details-link text-center m-2 fst-italic">
+            <div class="story-details-link text-center my-3">
               <a href="#">Részletes történet</a>
             </div>
           </div>
@@ -236,12 +249,11 @@
           <div
             class="d-flex flex-row flex-sm-column-reverse align-items-center justify-content-end"
           >
-            <div class="story-details-link text-center m-2 fst-italic">
+            <div class="story-details-link text-center my-3">
               <a href="#" class="w-100">Részletes történet</a>
             </div>
             <img
               src="./assets/stories/story-2.jpg"
-              alt=""
               class="ms-sm-2 align-self-end"
             />
           </div>
@@ -252,10 +264,9 @@
           <div class="d-flex flex-row flex-sm-column align-items-center">
             <img
               src="./assets/stories/story-3.jpg"
-              alt=""
               class="me-2 align-self-start"
             />
-            <div class="story-details-link text-center m-2 fst-italic">
+            <div class="story-details-link text-center my-3">
               <a href="#">Részletes történet</a>
             </div>
           </div>
@@ -283,12 +294,11 @@
           <div
             class="d-flex flex-row flex-sm-column-reverse align-items-center justify-content-end"
           >
-            <div class="story-details-link text-center m-2 fst-italic">
+            <div class="story-details-link text-center my-3">
               <a href="#" class="w-100">Részletes történet</a>
             </div>
             <img
               src="./assets/stories/story-1.jpg"
-              alt=""
               class="ms-sm-2 align-self-end"
             />
           </div>
@@ -301,13 +311,9 @@
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
         >
-          <div class="col">
+          <div class="col px-5 px-sm-3">
             <div class="card mb-3 shadow">
-              <img
-                src="./assets/jobs/job-1.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="./assets/jobs/job-1.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Állás #1</h5>
                 <p class="card-text">
@@ -315,38 +321,30 @@
                   Expedita error sit iure praesentium porro beatae labore
                   voluptate repellat libero voluptates?
                 </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                <p class="card-date">
+                  <small>2 napja</small>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col px-5 px-sm-3">
             <div class="card mb-3 shadow">
-              <img
-                src="./assets/jobs/job-2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="./assets/jobs/job-2.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Állás #2</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Animi, modi maxime odio possimus corporis nam.
                 </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                <p class="card-date">
+                  <small>1 hete</small>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col px-5 px-sm-3">
             <div class="card mb-3 shadow">
-              <img
-                src="./assets/jobs/job-3.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="./assets/jobs/job-3.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Állás #3</h5>
                 <p class="card-text">
@@ -354,19 +352,15 @@
                   Doloremque exercitationem ipsam aut itaque iure eveniet
                   similique voluptatum.
                 </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                <p class="card-date">
+                  <small>2 hete</small>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col px-5 px-sm-3">
             <div class="card mb-3 shadow">
-              <img
-                src="./assets/jobs/job-4.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="./assets/jobs/job-4.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Állás #4</h5>
                 <p class="card-text">
@@ -374,27 +368,23 @@
                   ab deleniti temporibus amet modi facere laudantium dolorum
                   voluptatem?
                 </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                <p class="card-date">
+                  <small>1 hónapja</small>
                 </p>
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col px-5 px-sm-3">
             <div class="card mb-3 shadow">
-              <img
-                src="./assets/jobs/job-5.jpg"
-                class="card-img-top"
-                alt="..."
-              />
+              <img src="./assets/jobs/job-5.jpg" class="card-img-top" />
               <div class="card-body">
                 <h5 class="card-title">Állás #5</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Maiores magnam iure quos consequuntur.
                 </p>
-                <p class="card-text">
-                  <small class="text-muted">Last updated 3 mins ago</small>
+                <p class="card-date">
+                  <small>1 hónapja</small>
                 </p>
               </div>
             </div>
@@ -406,7 +396,7 @@
       </div>
     </section>
     <section class="divider mb-4"></section>
-    <section class="gallery container mb-4" id="gallery">
+    <section class="gallery container mb-sm-4" id="gallery">
       <div class="gallery-title text-center mb-4">Galéria</div>
       <div
         class="row g-4 text-center mb-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 justify-content-center"
@@ -416,52 +406,46 @@
         <div class="col">
           <img
             src="./assets/gallery/gallery-1.jpg"
-            alt=""
             class="gallery-img"
             data-bs-target="#carouselGallery"
             data-bs-slide-to="0"
           />
         </div>
-        <div class="col">
+        <div class="col d-none d-sm-block">
           <img
             src="./assets/gallery/gallery-2.jpg"
-            alt=""
             class="gallery-img"
             data-bs-target="#carouselGallery"
             data-bs-slide-to="1"
           />
         </div>
-        <div class="col">
+        <div class="col d-none d-sm-block">
           <img
             src="./assets/gallery/gallery-3.jpg"
-            alt=""
             class="gallery-img"
             data-bs-target="#carouselGallery"
             data-bs-slide-to="2"
           />
         </div>
-        <div class="col">
+        <div class="col d-none d-sm-block">
           <img
             src="./assets/gallery/gallery-4.jpg"
-            alt=""
             class="gallery-img"
             data-bs-target="#carouselGallery"
             data-bs-slide-to="3"
           />
         </div>
-        <div class="col">
+        <div class="col d-none d-sm-block">
           <img
             src="./assets/gallery/gallery-5.jpg"
-            alt=""
             class="gallery-img"
             data-bs-target="#carouselGallery"
             data-bs-slide-to="4"
           />
         </div>
-        <div class="col">
+        <div class="col d-none d-sm-block">
           <img
             src="./assets/gallery/gallery-6.jpg"
-            alt=""
             class="gallery-img"
             data-bs-target="#carouselGallery"
             data-bs-slide-to="5"
@@ -472,13 +456,11 @@
         class="modal fade"
         id="galleryModal"
         tabindex="-1"
-        aria-labelledby="galleryModalLabel"
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="galleryModalLabel">Galéria</h1>
               <button
                 type="button"
                 class="btn-close"
@@ -576,14 +558,14 @@
         </div>
       </div>
     </section>
-    <footer class="mt-5">
+    <footer class="mt-5" id="contact">
       <div class="footer-main py-5">
         <div class="container">
           <div
             class="row row-cols-2 row-cols-md-3 row-cols-lg-4 justify-content-center"
           >
             <div class="col pb-3 pm-md-0 text-center">
-              <img src="./assets/pki_logo.png" alt="" class="footer-logo" />
+              <img src="./assets/pki_logo.png" class="footer-logo" />
             </div>
             <div class="col pb-3 pm-md-0">
               <div class="info-title">KAPCSOLAT</div>
@@ -594,7 +576,7 @@
               <div class="info-desc">
                 Elérhetősége:
                 <span class="info-colored"
-                  ><a href="mailto:info@hollohazi.hu">random@pki.hu</a>
+                  ><a href="mailto:random@pki.hu">random@pki.hu</a>
                 </span>
               </div>
             </div>
@@ -658,7 +640,7 @@
             <div class="socket-desc text-center pb-2 pb-lg-0">
               &copy 2022 Pécsi Központi Iskola. All Rights Reserved.
             </div>
-            <div class="socket-colored pb-3 pb-lg-0">
+            <div class="socket-colored pb-2 pb-lg-0">
               <a href="#">Adatvédelmi és cookiekezelési irányelvek</a>
             </div>
           </div>
