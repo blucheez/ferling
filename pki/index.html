@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -82,8 +83,21 @@
       <div
         class="container d-flex flex-column flex-lg-row justify-content-between"
       >
-        <div class="news-title text-center d-lg-none">Hírek</div>
-        <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div
+          class="news-title text-center d-lg-none"
+          data-aos="slide-up"
+          data-aos-duration="1000"
+        >
+          Hírek
+        </div>
+        <div
+          id="newsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-aos="slide-up"
+          data-aos-duration="1500"
+          data-aos-delay="50"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -174,18 +188,43 @@
         <div
           class="news-small-container d-flex flex-column justify-content-between align-items-center ms-3"
         >
-          <div class="news-title d-none d-lg-block">Hírek</div>
-          <a href="#" class="news-small my-3 my-lg-0">
+          <div
+            class="news-title d-none d-lg-block"
+            data-aos="slide-left"
+            data-aos-duration="1000"
+          >
+            Hírek
+          </div>
+          <a
+            href="#"
+            class="news-small my-3 my-lg-0"
+            data-aos="slide-left"
+            data-aos-duration="1000"
+          >
             Lorem ipsum dolor sit, amet consectetur adipisicing.
           </a>
-          <a href="#" class="news-small mb-3 mb-lg-0"
+          <a
+            href="#"
+            class="news-small mb-3 mb-lg-0"
+            data-aos="slide-left"
+            data-aos-duration="1000"
             >Lorem ipsum dolor sit amet.</a
           >
-          <a href="#" class="news-small">Lorem ipsum dolor sit.</a>
+          <a
+            href="#"
+            class="news-small"
+            data-aos="slide-left"
+            data-aos-duration="1000"
+            >Lorem ipsum dolor sit.</a
+          >
         </div>
       </div>
     </section>
-    <section class="benefits mt-5 d-flex align-items-center">
+    <section
+      class="benefits mt-5 d-flex align-items-center"
+      data-aos="flip-down"
+      data-aos-duration="1000"
+    >
       <div class="container d-flex justify-content-around align-items-center">
         <div class="benefit-container text-center">
           <img src="./assets/benefits/lang.png" />
@@ -214,11 +253,17 @@
       <div
         class="container d-flex flex-column justify-content-around h-100 pb-5"
       >
-        <div class="stories-title align-self-center mt-4 mb-3 text-center">
+        <div
+          class="stories-title align-self-center mt-4 mb-3 text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Kiemelt történetek
         </div>
         <div
           class="story-container d-flex shadow w-75 flex-column flex-sm-row mb-3 mb-sm-4"
+          data-aos="slide-left"
+          data-aos-duration="1500"
         >
           <div class="d-flex flex-row flex-sm-column align-items-center">
             <img
@@ -238,6 +283,8 @@
         </div>
         <div
           class="story-container story-container-right d-flex align-self-end shadow w-75 flex-column-reverse flex-sm-row justify-content-end mb-3 mb-sm-4"
+          data-aos="slide-right"
+          data-aos-duration="1500"
         >
           <div class="story-text text-end ps-4">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
@@ -260,6 +307,8 @@
         </div>
         <div
           class="story-container d-flex shadow w-75 flex-column flex-sm-row mb-3 mb-sm-4"
+          data-aos="slide-left"
+          data-aos-duration="1500"
         >
           <div class="d-flex flex-row flex-sm-column align-items-center">
             <img
@@ -283,6 +332,8 @@
         </div>
         <div
           class="story-container story-container-right d-flex align-self-end shadow w-75 flex-column-reverse flex-sm-row justify-content-end mb-3 mb-sm-4"
+          data-aos="slide-right"
+          data-aos-duration="1500"
         >
           <div class="story-text text-end ps-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum
@@ -307,11 +358,21 @@
     </section>
     <section class="jobs mb-4" id="jobs">
       <div class="container">
-        <div class="jobs-title text-center mb-4">Állásajánlatok</div>
+        <div
+          class="jobs-title text-center mb-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Állásajánlatok
+        </div>
         <div
           class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
         >
-          <div class="col px-5 px-sm-3">
+          <div
+            class="col px-5 px-sm-3"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+          >
             <div class="card mb-3 shadow">
               <img src="./assets/jobs/job-1.jpg" class="card-img-top" />
               <div class="card-body">
@@ -327,7 +388,12 @@
               </div>
             </div>
           </div>
-          <div class="col px-5 px-sm-3">
+          <div
+            class="col px-5 px-sm-3"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <div class="card mb-3 shadow">
               <img src="./assets/jobs/job-2.jpg" class="card-img-top" />
               <div class="card-body">
@@ -342,7 +408,12 @@
               </div>
             </div>
           </div>
-          <div class="col px-5 px-sm-3">
+          <div
+            class="col px-5 px-sm-3"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div class="card mb-3 shadow">
               <img src="./assets/jobs/job-3.jpg" class="card-img-top" />
               <div class="card-body">
@@ -358,7 +429,12 @@
               </div>
             </div>
           </div>
-          <div class="col px-5 px-sm-3">
+          <div
+            class="col px-5 px-sm-3"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <div class="card mb-3 shadow">
               <img src="./assets/jobs/job-4.jpg" class="card-img-top" />
               <div class="card-body">
@@ -374,7 +450,12 @@
               </div>
             </div>
           </div>
-          <div class="col px-5 px-sm-3">
+          <div
+            class="col px-5 px-sm-3"
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <div class="card mb-3 shadow">
               <img src="./assets/jobs/job-5.jpg" class="card-img-top" />
               <div class="card-body">
@@ -390,20 +471,53 @@
             </div>
           </div>
         </div>
-        <div class="jobs-link my-2">
+        <div
+          class="jobs-link my-2"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
           <a href="#jobs">További állásajánlatok</a>
         </div>
       </div>
     </section>
-    <section class="divider mb-4"></section>
+    <section class="divider mb-4" data-aos="fade" data-aos-duration="1000">
+      <div class="container d-flex align-items-center justify-content-center h-100">
+        <div class="num-container d-flex flex-column align-items-center me-5">
+          <i class="bi bi-people"></i>
+          <div class="counter" id="count1"></div>
+          <div class="counter-text">Tagok</div>
+        </div>
+        <div class="num-container d-flex flex-column align-items-center mx-5">
+          <i class="bi bi-buildings"></i>
+          <div class="counter" id="count2"></div>
+          <div class="counter-text">Cégek</div>
+        </div>
+        <div class="num-container d-flex flex-column align-items-center mx-5">
+          <i class="bi bi-journal-check"></i>
+          <div class="counter" id="count3"></div>
+          <div class="counter-text">Végzettek</div>
+        </div>
+        <div class="num-container d-flex flex-column align-items-center ms-5">
+          <i class="bi bi-calendar4-event"></i>
+          <div class="counter" id="count4"></div>
+          <div class="counter-text">Találkozók</div>
+        </div>
+      </div>
+    </section>
     <section class="gallery container mb-sm-4" id="gallery">
-      <div class="gallery-title text-center mb-4">Galéria</div>
+      <div
+        class="gallery-title text-center mb-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        Galéria
+      </div>
       <div
         class="row g-4 text-center mb-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xxl-6 justify-content-center"
         data-bs-toggle="modal"
         data-bs-target="#galleryModal"
       >
-        <div class="col">
+        <div class="col" data-aos="flip-left" data-aos-duration="1000">
           <img
             src="./assets/gallery/gallery-1.jpg"
             class="gallery-img"
@@ -411,7 +525,12 @@
             data-bs-slide-to="0"
           />
         </div>
-        <div class="col d-none d-sm-block">
+        <div
+          class="col d-none d-sm-block"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <img
             src="./assets/gallery/gallery-2.jpg"
             class="gallery-img"
@@ -419,7 +538,12 @@
             data-bs-slide-to="1"
           />
         </div>
-        <div class="col d-none d-sm-block">
+        <div
+          class="col d-none d-sm-block"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <img
             src="./assets/gallery/gallery-3.jpg"
             class="gallery-img"
@@ -427,7 +551,12 @@
             data-bs-slide-to="2"
           />
         </div>
-        <div class="col d-none d-sm-block">
+        <div
+          class="col d-none d-sm-block"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
           <img
             src="./assets/gallery/gallery-4.jpg"
             class="gallery-img"
@@ -435,7 +564,12 @@
             data-bs-slide-to="3"
           />
         </div>
-        <div class="col d-none d-sm-block">
+        <div
+          class="col d-none d-sm-block"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
           <img
             src="./assets/gallery/gallery-5.jpg"
             class="gallery-img"
@@ -443,7 +577,12 @@
             data-bs-slide-to="4"
           />
         </div>
-        <div class="col d-none d-sm-block">
+        <div
+          class="col d-none d-sm-block"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           <img
             src="./assets/gallery/gallery-6.jpg"
             class="gallery-img"
@@ -558,7 +697,12 @@
         </div>
       </div>
     </section>
-    <footer class="mt-5" id="contact">
+    <footer
+      class="mt-5"
+      id="contact"
+      data-aos="slide-up"
+      data-aos-duration="1000"
+    >
       <div class="footer-main py-5">
         <div class="container">
           <div
@@ -649,5 +793,10 @@
     </footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
   </body>
 </html>
