@@ -12,9 +12,11 @@
 * {
   font-family: var.$raleway;
 }
-body {
+
+body{
   overflow-x: hidden;
 }
+
 
 $container-max-widths: (
   sm: 540px,
