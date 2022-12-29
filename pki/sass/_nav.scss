@@ -4,10 +4,37 @@ header {
   height: 100vh;
   background-color: var.$peach;
   nav {
-    background-color: var.$blue;
-    opacity: 0.9;
+    background-color: var.$blue-tp;
     z-index: 1;
 
+    @media (max-width: 992px) {
+      .navbar-collapse {
+        position: absolute;
+        top: 118.5px;
+        left: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        transition: all 0.4s ease;
+        display: block;
+        background-color: var.$blue-tp;
+      }
+      .navbar-collapse.collapsing {
+        height: auto !important;
+        margin-left: 50%;
+        left: 50%;
+        transition: all 0.2s ease;
+      }
+      .navbar-collapse.show {
+        left: 0;
+      }
+    }
+    @media (max-width: 576px) {
+      .navbar-collapse{
+        top: 157.3px;
+      }
+    }
     .logo {
       width: 9rem;
     }
@@ -56,7 +83,7 @@ header {
     .top-menu {
       .form-control {
         color: #fff;
-        background-color: var.$blue-tp;
+        background-color: transparent;
         border: none;
         border-bottom: 1px solid var.$peach;
         border-radius: 0;
@@ -64,7 +91,7 @@ header {
         padding: 0;
       }
       .form-control:focus {
-        background-color: var.$blue-tp;
+        background-color: transparent;
         box-shadow: none;
       }
       .form-control::placeholder {
