@@ -18,8 +18,16 @@
       margin-top: 20px;
       transition: 0.2s;
     }
-    .benefit-text:hover{
-        color: var.$peach2;
+    .benefit-text:hover {
+      color: var.$peach2;
+    }
+    @media (max-width: 576px) {
+      img {
+        width: 60px;
+      }
+      .benefit-text {
+        font-size: 0.75rem;
+      }
     }
   }
 }
