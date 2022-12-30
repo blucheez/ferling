@@ -12,6 +12,13 @@
   img {
     width: 200px;
     margin: 50px 35px 25px;
+    cursor: pointer;
+    transition: .2s;
+  }
+
+  img:hover{
+    transform: scale(1.05);
+    transition: .2s;
   }
   .carousel-indicators {
     bottom: -80px;
@@ -81,7 +88,7 @@
     border-bottom: 1px solid var.$green;
   }
 
-  .dropdown button.show-more-btn:hover{
+  .dropdown button.show-more-btn:hover {
     background-color: var.$green;
     border-radius: 5px;
   }

@@ -82,6 +82,7 @@
       border-radius: 0;
       font-weight: 400;
       position: relative;
+      transition: 0.2s;
       img {
         border-radius: 0;
         max-width: 270;
@@ -146,6 +147,8 @@
       }
     }
     .card:hover {
+      transform: scale(1.05);
+      transition: 0.2s;
       .addtocart-button {
         display: block;
       }

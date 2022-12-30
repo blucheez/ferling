@@ -5,25 +5,40 @@
   background: var.$grad;
 
   img {
-    width: 120px;
-    height: 120px;
-    border: 2px solid var.$grey;
-    border-radius: 50%;
-    padding: 15px;
+    width: 70px;
+    height: 70px;
   }
 
+  
+  .image-border {
+    border: 2px solid var.$grey;
+    border-radius: 50%;
+    padding: 30px;
+    display: inline-block;
+  }
+  
+  .bigger-img{
+    width: 90px;
+    height: 90px;
+  }
+
+  .bigger-img-border{
+    padding: 20px;
+  }
+  
   .img-container {
     width: 150px;
   }
 
-  .warranty-title{
+  .warranty-title {
     font-family: var.$cormorant;
     letter-spacing: 1px;
     font-size: 40px;
   }
 
-  .warranty-desc{
+  .warranty-desc {
     font-weight: 400;
     margin: 20px 0 40px;
+    line-height: 18px;
   }
 }

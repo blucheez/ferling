@@ -15,10 +15,16 @@
     width: auto;
     padding: 40px;
     margin-bottom: 15px;
+    transition: .25s;
 
     .gift-img {
       width: 70px;
     }
+  }
+
+  .gift-img-div:hover{
+    transform: scale(1.1);
+    transition: 0.25s;
   }
 
   .gift-desc {
